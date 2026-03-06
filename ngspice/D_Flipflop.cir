@@ -1,0 +1,109 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.param LAMBDA=0.09u
+.param width_N={10*LAMBDA}
+.param width_P={2*width_N}
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+VD D gnd PULSE(0 'SUPPLY' 0 0.1ns 0.1ns 7.5ns 15ns)
+Vclk clk gnd PULSE(0 'SUPPLY' 0 0.1ns 0.1ns 5ns 10ns)
+
+
+M1 y D vdd vdd CMOSP W={width_P*2} L={2*LAMBDA}
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P}
++ AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+M2 out1 clk y vdd CMOSP W={width_P*2} L={2*LAMBDA}
++ AS={5*width_P*LAMBDA*2} PS={10*LAMBDA+2*width_P*2}
++ AD={5*width_P*LAMBDA*2} PD={10*LAMBDA+2*width_P*2}
+
+M3 out1 D gnd gnd CMOSN W={width_N} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N} 
++ AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+
+M4 out2 clk vdd vdd CMOSP W={width_P} L={2*LAMBDA}
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P}
++ AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+M5 out2 out1 y1 gnd CMOSN W={width_N*2} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA*2} PS={10*LAMBDA+2*width_N*2} 
++ AD={5*width_N*LAMBDA*2} PD={10*LAMBDA+2*width_N*2}
+
+M6 y1 clk gnd gnd CMOSN W={width_N*2} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA*2} PS={10*LAMBDA+2*width_N*2} 
++ AD={5*width_N*LAMBDA*2} PD={10*LAMBDA+2*width_N*2}
+
+M7 out3 out2 vdd vdd CMOSP W={width_P} L={2*LAMBDA}
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P}
++ AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+M8 out3 clk y2 gnd CMOSN W={width_N*2} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA*2} PS={10*LAMBDA+2*width_N*2} 
++ AD={5*width_N*LAMBDA*2} PD={10*LAMBDA+2*width_N*2}
+
+M9 y2 out2 gnd gnd CMOSN W={width_N*2} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA*2} PS={10*LAMBDA+2*width_N*2} 
++ AD={5*width_N*LAMBDA*2} PD={10*LAMBDA+2*width_N*2}
+
+M10 Q out3 vdd vdd CMOSP W={width_P} L={2*LAMBDA}
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P}
++ AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+M11 Q out3 gnd gnd CMOSN W={width_N} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N} 
++ AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+
+
+.tran 0.1ns 160ns
+
+
+
+.control
+
+run
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+set curplottitle = "2024102053 DFF"
+plot v(clk) V(D)+2 v(out1) +4 v(Q)+6
+
+* meas tran t_PCQr1 WHEN V(clk) = 0.9 RISE=3
+* meas tran t_PCQr2 WHEN V(Q) = 0.9 RISE=1
+
+* let t_PCQ_RISE =  t_PCQr2 - t_PCQr1
+
+* meas tran t_PCQf1 WHEN V(clk) = 0.9 RISE=2
+* meas tran t_PCQf2 WHEN V(Q) = 0.9 FALL=1
+
+* let t_PCQ_FALL =  t_PCQf2 - t_PCQf1
+
+
+
+* meas tran tsu1 WHEN V(D)=0.9 RISE=2 
+* meas tran tsu2 WHEN V(out1)=0.9 FALL=2
+
+* let tsu = tsu2-tsu1;
+
+* meas tran tho1 WHEN V(clk)=0.9 RISE=2 
+* meas tran tho2 WHEN V(out2)=0.9 FALL=2
+* let tho = tho2-tho1;
+print tho
+
+meas tran clk_50_rise WHEN V(clk)=0.9 RISE=3
+meas tran q_50_rise WHEN V(Q)=0.9 RISE=1
+
+
+meas tran clk_50_fall WHEN V(clk)=0.9 RISE=5
+meas tran q_50_fall WHEN V(Q)=0.9 FALL=2
+
+let tpcq_rise = q_50_rise - clk_50_rise
+let tpcq_fall = q_50_fall - clk_50_fall
+ print tho
+print tpcq_rise
+print tpcq_fall
+
+.endc
+.end    

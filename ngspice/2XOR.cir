@@ -1,0 +1,52 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+*.param LAMBDA=0.09u
+*.param width_N={10*LAMBDA}
+*.param width_P={2*width_N}
+.global gnd vdd
+.option scale=0.09u
+Vdd vdd gnd 'SUPPLY'
+
+Va a gnd PULSE(0 'SUPPLY' 0 0 0 20ns 40ns)
+Vb b gnd PULSE(0 'SUPPLY' 0 0 0 40ns 80ns)
+
+
+M1000 inverter1_0/out a gnd Gnd CMOSN w=10 l=2
++  ad=70 pd=34 as=171 ps=95
+M1001 inverter1_0/out a Vdd inverter1_0/w_n19_78# CMOSP w=20 l=2
++  ad=140 pd=54 as=288 ps=128
+M1002 inverter1_1/out b gnd Gnd CMOSN w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1003 inverter1_1/out b Vdd inverter1_1/w_n19_78# CMOSP w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1004 out inverter1_0/out a_79_14# w_118_6# CMOSP w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1005 a_79_14# a Vdd w_66_6# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_79_n18# a gnd Gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1007 a_131_n18# inverter1_0/out out Gnd CMOSN w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1008 a_79_14# inverter1_1/out out w_118_6# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 Vdd b a_79_14# w_66_6# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 out b a_79_n18# Gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 gnd inverter1_1/out a_131_n18# Gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+
+
+.tran 10ps 160ns
+.control
+run
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+set curplottitle = "2024102053 2XOR"
+plot V(a) V(b)+2 V(out)+4
+plot V(a) V(b)+2 V(out)+4
+
+
+.endc
+.end

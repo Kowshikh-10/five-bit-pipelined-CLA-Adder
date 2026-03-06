@@ -1,0 +1,80 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+*.param LAMBDA=0.09u
+*.param width_N={10*LAMBDA}
+*.param width_P={2*width_N}
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+Va a gnd PULSE(0 'SUPPLY' 0 0 0 10ns 20ns)
+Vb b gnd PULSE(0 'SUPPLY' 0 0 0 20ns 40ns)
+Vc c gnd PULSE(0 'SUPPLY' 0 0 0 40ns 80ns)
+Vd d gnd PULSE(0 'SUPPLY' 0 0 0 80ns 160ns)
+
+
+.option scale=0.09u
+
+M1000 Vdd c out w_n8_n40# CMOSP w=20 l=2
++  ad=240 pd=104 as=320 ps=152
+M1001 out b Vdd w_n8_n40# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_21_n95# c a_13_n95# Gnd CMOSN w=40 l=2
++  ad=240 pd=92 as=240 ps=92
+M1003 Vdd a out w_n8_n40# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 out d Vdd w_n8_n40# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 a_13_n95# b a_5_n95# Gnd CMOSN w=40 l=2
++  ad=0 pd=0 as=240 ps=92
+M1006 a_5_n95# a out Gnd CMOSN w=40 l=2
++  ad=0 pd=0 as=200 ps=90
+M1007 gnd d a_21_n95# Gnd CMOSN w=40 l=2
++  ad=200 pd=90 as=0 ps=0
+C0 a out 0.08fF
+C1 b Vdd 0.13fF
+C2 w_n8_n40# out 0.21fF
+C3 a_5_n95# out 0.41fF
+C4 w_n8_n40# c 0.14fF
+C5 a Vdd 0.13fF
+C6 a_21_n95# a_13_n95# 0.41fF
+C7 c out 0.08fF
+C8 w_n8_n40# Vdd 0.09fF
+C9 out Vdd 0.96fF
+C10 a_5_n95# a_13_n95# 0.41fF
+C11 a b 0.28fF
+C12 w_n8_n40# d 0.14fF
+C13 c Vdd 0.13fF
+C14 w_n8_n40# b 0.14fF
+C15 out d 0.08fF
+C16 b out 0.08fF
+C17 c d 0.28fF
+C18 c b 0.28fF
+C19 a_21_n95# gnd 0.41fF
+C20 a w_n8_n40# 0.14fF
+C21 gnd Gnd 0.13fF
+C22 a_21_n95# Gnd 0.01fF
+C23 a_13_n95# Gnd 0.01fF
+C24 a_5_n95# Gnd 0.01fF
+C25 Vdd Gnd 0.08fF
+C26 out Gnd 0.15fF
+C27 d Gnd 0.09fF
+C28 c Gnd 0.09fF
+C29 b Gnd 0.09fF
+C30 a Gnd 0.09fF
+C31 w_n8_n40# Gnd 2.07fF
+
+
+.tran 10ps 480ns
+.control
+
+run
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+set curplottitle = "2024102053 4NAND"
+plot V(a) V(b)+2  V(c)+4 V(d)+8 V(out)+10
+
+
+.endc
+.end

@@ -1,0 +1,92 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+*.param LAMBDA=0.09u
+*.param width_N={10*LAMBDA}
+*.param width_P={2*width_N}
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+Va a gnd PULSE(0 'SUPPLY' 0 0 0 10ns 20ns)
+Vb b gnd PULSE(0 'SUPPLY' 0 0 0 20ns 40ns)
+Vc c gnd PULSE(0 'SUPPLY' 0 0 0 20ns 40ns)
+Vd d gnd PULSE(0 'SUPPLY' 0 0 0 40ns 80ns)
+Ve e gnd PULSE(0 'SUPPLY' 0 0 0 80ns 160ns)
+
+
+.option scale=0.09u
+
+M1000 Vdd b out w_n10_n32# CMOSP w=20 l=2
++  ad=340 pd=154 as=340 ps=154
+M1001 out a Vdd w_n10_n32# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 Vdd d out w_n10_n32# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 out e Vdd w_n10_n32# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 a_19_n96# c a_11_n96# Gnd CMOSN w=50 l=2
++  ad=300 pd=112 as=300 ps=112
+M1005 a_11_n96# b a_3_n96# Gnd CMOSN w=50 l=2
++  ad=0 pd=0 as=300 ps=112
+M1006 a_3_n96# a out Gnd CMOSN w=50 l=2
++  ad=0 pd=0 as=250 ps=110
+M1007 a_27_n96# d a_19_n96# Gnd CMOSN w=50 l=2
++  ad=300 pd=112 as=0 ps=0
+M1008 out c Vdd w_n10_n32# CMOSP w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 gnd e a_27_n96# Gnd CMOSN w=50 l=2
++  ad=250 pd=110 as=0 ps=0
+C0 b w_n10_n32# 0.12fF
+C1 d c 0.27fF
+C2 Vdd b 0.10fF
+C3 out b 0.08fF
+C4 Vdd w_n10_n32# 0.14fF
+C5 a_11_n96# a_19_n96# 0.52fF
+C6 out w_n10_n32# 0.18fF
+C7 e w_n10_n32# 0.12fF
+C8 out Vdd 1.24fF
+C9 c b 0.27fF
+C10 out e 0.08fF
+C11 a b 0.27fF
+C12 c w_n10_n32# 0.12fF
+C13 Vdd c 0.10fF
+C14 a w_n10_n32# 0.12fF
+C15 a_11_n96# a_3_n96# 0.52fF
+C16 out c 0.08fF
+C17 Vdd a 0.10fF
+C18 a_27_n96# gnd 0.52fF
+C19 d w_n10_n32# 0.12fF
+C20 Vdd d 0.10fF
+C21 out a 0.08fF
+C22 out d 0.08fF
+C23 e d 0.27fF
+C24 out a_3_n96# 0.52fF
+C25 a_27_n96# a_19_n96# 0.52fF
+C26 gnd Gnd 0.14fF
+C27 a_27_n96# Gnd 0.01fF
+C28 a_19_n96# Gnd 0.01fF
+C29 a_11_n96# Gnd 0.01fF
+C30 a_3_n96# Gnd 0.01fF
+C31 out Gnd 0.14fF
+C32 Vdd Gnd 0.07fF
+C33 e Gnd 0.11fF
+C34 d Gnd 0.11fF
+C35 c Gnd 0.11fF
+C36 b Gnd 0.11fF
+C37 a Gnd 0.11fF
+C38 w_n10_n32# Gnd 2.19fF
+
+
+.tran 10ps 640ns
+.control
+
+run
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+set curplottitle = "2024102053 5NAND"
+plot V(a) V(b)+2  V(c)+4 V(d)+8  V(e)+10 V(out)+12
+
+
+.endc
+.end

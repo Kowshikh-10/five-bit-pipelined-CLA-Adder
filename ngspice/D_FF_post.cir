@@ -1,0 +1,119 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+*.param LAMBDA=0.09u
+*.param width_N={10*LAMBDA}
+*.param width_P={2*width_N}
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+VD D gnd PULSE(0 'SUPPLY' 0 0 0 7.5ns 15ns)
+Vclk clk gnd PULSE(0 'SUPPLY' 2n 0 0 5ns 10ns)
+
+.option scale=0.09u
+
+M1000 Q inverter1_0/in gnd gnd CMOSN w=10 l=2
++  ad=70 pd=34 as=310 ps=162
+M1001 Q inverter1_0/in Vdd inverter1_0/w_n19_78# CMOSP w=20 l=2
++  ad=140 pd=54 as=520 ps=242
+M1002 inverter1_0/in a_74_n14# Vdd w_129_n22# CMOSP w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1003 a_74_n68# clk gnd gnd CMOSN w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1004 a_74_n14# a_6_n70# a_74_n68# gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1005 a_6_n70# clk a_6_n32# w_n7_n40# CMOSP w=40 l=2
++  ad=200 pd=90 as=240 ps=92
+M1006 a_6_n70# D gnd gnd CMOSN w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1007 a_6_n32# D Vdd w_n7_n40# CMOSP w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_74_n14# clk Vdd w_61_n22# CMOSP w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1009 inverter1_0/in clk a_142_n68# gnd CMOSN w=20 l=2
++  ad=100 pd=50 as=120 ps=52
+M1010 a_142_n68# a_74_n14# gnd gnd CMOSN w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 inverter1_0/in gnd 0.05fF
+C1 clk a_6_n70# 0.12fF
+C2 Vdd clk 0.20fF
+C3 w_129_n22# a_74_n14# 0.10fF
+C4 inverter1_0/in Q 0.04fF
+C5 w_n7_n40# a_6_n70# 0.07fF
+C6 w_n7_n40# clk 0.10fF
+C7 Q inverter1_0/w_n19_78# 0.05fF
+C8 Vdd w_n7_n40# 0.08fF
+C9 Q gnd 0.07fF
+C10 a_6_n32# a_6_n70# 0.41fF
+C11 a_142_n68# inverter1_0/in 0.21fF
+C12 Vdd a_6_n32# 0.41fF
+C13 Vdd w_129_n22# 0.08fF
+C14 inverter1_0/in Vdd 0.27fF
+C15 a_142_n68# gnd 0.21fF
+C16 w_n7_n40# a_6_n32# 0.01fF
+C17 gnd a_6_n70# 0.38fF
+C18 w_61_n22# a_74_n14# 0.05fF
+C19 gnd clk 0.14fF
+C20 Vdd inverter1_0/w_n19_78# 0.10fF
+C21 clk D 0.07fF
+C22 clk a_74_n14# 0.03fF
+C23 Vdd Q 0.21fF
+C24 Vdd a_74_n14# 0.45fF
+C25 inverter1_0/in w_129_n22# 0.05fF
+C26 a_74_n68# gnd 0.21fF
+C27 w_61_n22# clk 0.10fF
+C28 w_n7_n40# D 0.09fF
+C29 Vdd w_61_n22# 0.08fF
+C30 a_74_n68# a_74_n14# 0.21fF
+C31 inverter1_0/in inverter1_0/w_n19_78# 0.06fF
+C32 a_142_n68# gnd 0.01fF
+C33 a_74_n68# gnd 0.01fF
+C34 a_74_n14# gnd 0.85fF
+C35 a_6_n70# gnd 1.36fF
+C36 D gnd 0.27fF
+C37 clk gnd 1.90fF
+C38 w_129_n22# gnd 0.87fF
+C39 w_61_n22# gnd 0.87fF
+C40 w_n7_n40# gnd 1.80fF
+C41 gnd gnd 1.05fF
+C42 Q gnd 0.19fF
+C43 Vdd gnd 1.68fF
+C44 inverter1_0/in gnd 0.47fF
+C45 inverter1_0/w_n19_78# gnd 1.03fF
+
+
+.tran 0.1ns 160ns
+
+
+
+.control
+
+run
+set hcopypscolor = 1 
+set color0=white 
+set color1=black 
+set curplottitle = "2024102053 DFF Post"
+plot v(clk) V(D)+2 v(Q)+4
+
+meas tran t_PCQr1 WHEN V(clk) = 0.9 RISE=3
+meas tran t_PCQr2 WHEN V(Q) = 0.9 RISE=2
+
+let t_PCQ_RISE =  t_PCQr2 - t_PCQr1
+
+meas tran t_PCQf1 WHEN V(clk) = 0.9 RISE=5
+meas tran t_PCQf2 WHEN V(Q) = 0.9 FALL=2
+
+let t_PCQ_FALL =  t_PCQf2 - t_PCQf1
+
+print t_PCQ_RISE
+print t_PCQ_FALL
+
+
+
+meas tran t_D_50 WHEN V(D) = 0.9 RISE=2
+meas tran t_B_50 WHEN v(a_74_n14#) = 0.9 RISE=1
+
+let set_time = t_B_50 - t_D_50
+
+print set_time
+.endc
+.end    

@@ -1,0 +1,1512 @@
+* SPICE3 file created from CLA.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 2NAND1_0/out a0 vdd 2NAND1_0/w_n10_n2# pfet w=20 l=2
++  ad=120 pd=52 as=6245 ps=2951
+M1001 2NAND1_0/out b0 2NAND1_0/a_3_n40# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=120 ps=52
+M1002 2NAND1_0/a_3_n40# a0 gnd Gnd nfet w=20 l=2
++  ad=0 pd=0 as=4320 ps=2194
+M1003 vdd b0 2NAND1_0/out 2NAND1_0/w_n10_n2# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 inverter1_0/a_n3_52# inverter1_0/a_n9_65# inverter1_0/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1005 inverter1_0/a_n3_52# inverter1_0/a_n9_65# inverter1_0/a_n11_84# inverter1_0/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1006 inverter1_1/a_n3_52# inverter1_1/a_n9_65# inverter1_1/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1007 inverter1_1/a_n3_52# inverter1_1/a_n9_65# inverter1_1/a_n11_84# inverter1_1/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1008 inverter1_2/a_n3_52# inverter1_2/a_n9_65# inverter1_2/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1009 inverter1_2/a_n3_52# inverter1_2/a_n9_65# inverter1_2/a_n11_84# inverter1_2/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1010 inverter1_3/a_n3_52# inverter1_3/a_n9_65# inverter1_3/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1011 inverter1_3/a_n3_52# inverter1_3/a_n9_65# inverter1_3/a_n11_84# inverter1_3/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1012 inverter1_4/a_n3_52# inverter1_4/a_n9_65# inverter1_4/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1013 inverter1_4/a_n3_52# inverter1_4/a_n9_65# inverter1_4/a_n11_84# inverter1_4/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1014 inverter1_5/a_n3_52# inverter1_5/a_n9_65# inverter1_5/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1015 inverter1_5/a_n3_52# inverter1_5/a_n9_65# inverter1_5/a_n11_84# inverter1_5/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1016 2XOR_0/inverter1_0/a_n3_52# 2XOR_0/inverter1_0/a_n9_65# 2XOR_0/inverter1_0/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1017 2XOR_0/inverter1_0/a_n3_52# 2XOR_0/inverter1_0/a_n9_65# 2XOR_0/inverter1_0/a_n11_84# 2XOR_0/inverter1_0/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1018 2XOR_0/inverter1_1/a_n3_52# 2XOR_0/inverter1_1/a_n9_65# 2XOR_0/inverter1_1/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1019 2XOR_0/inverter1_1/a_n3_52# 2XOR_0/inverter1_1/a_n9_65# 2XOR_0/inverter1_1/a_n11_84# 2XOR_0/inverter1_1/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1020 p0 2XOR_0/a_125_49# 2XOR_0/a_79_14# 2XOR_0/w_118_6# pfet w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1021 2XOR_0/a_79_14# a0 2XOR_0/Vdd 2XOR_0/w_66_6# pfet w=20 l=2
++  ad=0 pd=0 as=200 ps=100
+M1022 2XOR_0/a_79_n18# a0 2XOR_0/gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1023 2XOR_0/a_131_n18# 2XOR_0/a_125_49# p0 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1024 2XOR_0/a_79_14# 2XOR_0/a_137_n22# p0 2XOR_0/w_118_6# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 2XOR_0/Vdd b0 2XOR_0/a_79_14# 2XOR_0/w_66_6# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 p0 b0 2XOR_0/a_79_n18# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1027 2XOR_0/gnd 2XOR_0/a_137_n22# 2XOR_0/a_131_n18# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 inverter1_6/a_n3_52# inverter1_6/a_n9_65# inverter1_6/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1029 inverter1_6/a_n3_52# inverter1_6/a_n9_65# inverter1_6/a_n11_84# inverter1_6/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1030 inverter1_7/a_n3_52# inverter1_7/a_n9_65# inverter1_7/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1031 inverter1_7/a_n3_52# inverter1_7/a_n9_65# inverter1_7/a_n11_84# inverter1_7/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1032 inverter1_8/a_n3_52# inverter1_8/a_n9_65# inverter1_8/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1033 inverter1_8/a_n3_52# inverter1_8/a_n9_65# inverter1_8/a_n11_84# inverter1_8/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1034 inverter1_9/a_n3_52# inverter1_9/a_n9_65# inverter1_9/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1035 inverter1_9/a_n3_52# inverter1_9/a_n9_65# inverter1_9/a_n11_84# inverter1_9/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1036 inverter1_10/a_n3_52# inverter1_10/a_n9_65# inverter1_10/a_n11_52# Gnd nfet w=10 l=2
++  ad=70 pd=34 as=60 ps=32
+M1037 inverter1_10/a_n3_52# inverter1_10/a_n9_65# inverter1_10/a_n11_84# inverter1_10/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=120 ps=52
+M1038 a_759_3032# a_179_1919# a_759_2988# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=120 ps=52
+M1039 vdd a_64_1943# c4 w_1072_1940# pfet w=20 l=2
++  ad=0 pd=0 as=320 ps=152
+M1040 s3 a_932_1072# a_3393_1607# Gnd nfet w=10 l=2
++  ad=100 pd=60 as=60 ps=32
+M1041 gnd a_759_3032# a_1060_2722# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=300 ps=112
+M1042 a_3362_453# p2 vdd w_3349_445# pfet w=20 l=2
++  ad=320 pd=152 as=0 ps=0
+M1043 a_131_775# a_19_810# p1 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1044 a_777_1127# p2 a_769_1127# Gnd nfet w=30 l=2
++  ad=180 pd=72 as=180 ps=72
+M1045 c5 a_749_2650# vdd w_1023_2786# pfet w=20 l=2
++  ad=340 pd=154 as=0 ps=0
+M1046 a_756_2650# p4 a_749_2650# Gnd nfet w=40 l=2
++  ad=240 pd=92 as=200 ps=90
+M1047 a_761_2104# p3 gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1048 gnd a_3416_n409# a_3410_n405# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1049 a_47_591# a1 gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1050 a_1052_2722# a_749_2650# a_1044_2722# Gnd nfet w=50 l=2
++  ad=300 pd=112 as=300 ps=112
+M1051 a_3410_43# a_3404_110# s1 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1052 a_776_1890# p2 a_768_1890# Gnd nfet w=30 l=2
++  ad=180 pd=72 as=180 ps=72
+M1053 s3 a_3439_1674# a_3393_1639# w_3432_1631# pfet w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1054 gnd a_761_2148# a_1101_1885# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=240 ps=92
+M1055 a_19_810# a1 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1056 a_82_1415# a2 gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1057 a_782_1645# p1 a_774_1645# Gnd nfet w=40 l=2
++  ad=240 pd=92 as=240 ps=92
+M1058 a_761_1890# p2 vdd w_755_1935# pfet w=20 l=2
++  ad=220 pd=102 as=0 ps=0
+M1059 s1 a_720_432# a_3358_43# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1060 a_115_2744# a_56_2664# p4 w_154_2736# pfet w=20 l=2
++  ad=320 pd=152 as=120 ps=52
+M1061 vdd a_720_432# a_762_1127# w_756_1172# pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1062 a_96_2115# a_37_2035# p3 w_135_2107# pfet w=20 l=2
++  ad=320 pd=152 as=120 ps=52
+M1063 out in gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1064 a_79_807# a1 vdd w_66_799# pfet w=20 l=2
++  ad=320 pd=152 as=0 ps=0
+M1065 vdd a_932_1072# a_3393_1639# w_3380_1631# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 a_64_1899# a3 gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1067 a_3358_n405# p0 gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1068 p1 b1 a_79_775# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1069 gnd a_165_1251# a_767_2825# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=180 ps=72
+M1070 a_64_1943# a3 vdd w_51_1937# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1071 s1 a_3404_110# a_3358_75# w_3397_67# pfet w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1072 a_3358_n373# a_3416_n409# s0 w_3397_n381# pfet w=20 l=2
++  ad=320 pd=152 as=120 ps=52
+M1073 vdd p4 a_752_2825# w_746_2870# pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1074 a_3415_2433# a_3409_2500# s4 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1075 a_759_3032# p4 vdd w_746_3026# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1076 p1 a_19_810# a_79_807# w_118_799# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1077 vdd a_162_611# a_775_1022# w_762_1016# pfet w=20 l=2
++  ad=0 pd=0 as=120 ps=52
+M1078 gnd a_20_727# a_131_775# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1079 a_19_810# a1 vdd w_3_836# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1080 a_82_1447# a2 vdd w_69_1439# pfet w=20 l=2
++  ad=320 pd=152 as=0 ps=0
+M1081 vdd a_720_432# a_3358_75# w_3345_67# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1082 a_162_611# a_47_635# gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1083 a_939_1072# a_50_1275# a_932_1072# Gnd nfet w=30 l=2
++  ad=180 pd=72 as=150 ps=70
+M1084 gnd p1 a_782_2471# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=300 ps=112
+M1085 a_761_2148# p3 vdd w_748_2142# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1086 a_47_635# b1 a_47_591# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1087 a_134_1415# a_22_1450# p2 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1088 a_759_1645# a_720_432# vdd w_753_1700# pfet w=20 l=2
++  ad=320 pd=152 as=0 ps=0
+M1089 out in vdd w_7_1393# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1090 gnd a_3451_1603# a_3445_1607# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1091 s4 c4 a_3363_2433# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1092 a_179_1919# a_64_1943# vdd w_163_1945# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1093 vdd a_50_1275# a_932_1072# w_926_1117# pfet w=20 l=2
++  ad=0 pd=0 as=220 ps=102
+M1094 a_751_2471# p1 vdd w_745_2535# pfet w=20 l=2
++  ad=340 pd=154 as=0 ps=0
+M1095 a_774_2471# p2 a_766_2471# Gnd nfet w=50 l=2
++  ad=300 pd=112 as=300 ps=112
+M1096 a_165_1251# a_50_1275# gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1097 vdd b4 a_83_2572# w_70_2566# pfet w=20 l=2
++  ad=0 pd=0 as=120 ps=52
+M1098 a_726_356# a_720_432# gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1099 a_47_635# a1 vdd w_34_629# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1100 vdd p2 a_749_2650# w_743_2705# pfet w=20 l=2
++  ad=0 pd=0 as=320 ps=152
+M1101 a_759_1645# p2 vdd w_753_1700# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1102 c5 a_83_2572# vdd w_1023_2786# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1103 a_83_2572# b4 a_83_2528# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=120 ps=52
+M1104 a_3358_n373# p0 vdd w_3345_n381# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1105 a_751_2471# p2 vdd w_745_2535# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1106 a_726_400# a_720_432# vdd w_713_394# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1107 a_1036_2722# a_83_2572# c5 Gnd nfet w=50 l=2
++  ad=300 pd=112 as=250 ps=110
+M1108 s4 a_3409_2500# a_3363_2465# w_3402_2457# pfet w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1109 gnd a_162_611# a_772_2650# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=240 ps=92
+M1110 vdd b1 a_79_807# w_66_799# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1111 c4 a_759_1645# vdd w_1072_1940# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 a_50_1231# a2 gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1113 a_36_2118# a3 vdd w_20_2144# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1114 a_761_2148# a_165_1251# a_761_2104# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1115 a_179_1919# a_64_1943# gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1116 a_162_611# a_47_635# vdd w_146_637# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1117 gnd a_720_432# a_777_1127# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 a_766_1645# p3 a_759_1645# Gnd nfet w=40 l=2
++  ad=240 pd=92 as=200 ps=90
+M1119 a_764_2650# p3 a_756_2650# Gnd nfet w=40 l=2
++  ad=240 pd=92 as=0 ps=0
+M1120 a_1101_1885# a_761_1890# a_1093_1885# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=240 ps=92
+M1121 p2 a_22_1450# a_82_1447# w_121_1439# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1122 a_3393_1607# p3 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1123 gnd p3 a_776_1890# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 a_20_727# b1 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1125 vdd p1 a_762_1127# w_756_1172# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1126 a_3393_1639# a_3451_1603# s3 w_3432_1631# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1127 vdd c4 a_3363_2465# w_3350_2457# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 a_96_2083# a3 gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1129 a_1085_1885# a_64_1943# c4 Gnd nfet w=40 l=2
++  ad=240 pd=92 as=200 ps=90
+M1130 a_79_807# a_20_727# p1 w_118_799# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1131 a_165_1251# a_50_1275# vdd w_149_1277# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1132 a_115_2712# a4 gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1133 gnd a_3416_39# a_3410_43# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1134 a_759_2825# p4 a_752_2825# Gnd nfet w=30 l=2
++  ad=180 pd=72 as=150 ps=70
+M1135 vdd p3 a_761_1890# w_755_1935# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1136 a_55_2747# a4 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1137 a_36_2118# a3 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1138 a_56_2664# b4 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1139 a_64_1943# b3 a_64_1899# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1140 s0 a_3364_n409# a_3358_n405# Gnd nfet w=10 l=2
++  ad=100 pd=60 as=0 ps=0
+M1141 a_726_400# p1 a_726_356# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1142 a_37_2035# b3 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1143 vdd b1 a_47_635# w_34_629# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1144 vdd b3 a_64_1943# w_51_1937# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1145 a_3393_1639# p3 vdd w_3380_1631# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1146 vdd p1 a_726_400# w_713_394# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1147 a_752_2825# p3 vdd w_746_2870# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1148 gnd a_3421_2429# a_3415_2433# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1149 a_20_727# b1 vdd w_4_753# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1150 vdd a_179_1919# a_759_3032# w_746_3026# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1151 a_115_2744# a4 vdd w_102_2736# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1152 a_824_356# a_726_400# gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1153 a_50_1275# a2 vdd w_37_1269# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1154 a_758_2471# p4 a_751_2471# Gnd nfet w=50 l=2
++  ad=300 pd=112 as=250 ps=110
+M1155 a_3358_75# a_3416_39# s1 w_3397_67# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 a_148_2083# a_36_2118# p3 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1157 a_824_400# a_726_400# vdd w_811_394# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1158 a_55_2747# a4 vdd w_39_2773# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1159 vdd p4 a_749_2650# w_743_2705# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1160 vdd a_165_1251# a_761_2148# w_748_2142# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1161 a_947_1072# a_775_1022# a_939_1072# Gnd nfet w=30 l=2
++  ad=180 pd=72 as=0 ps=0
+M1162 gnd out a_134_1415# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1163 a_167_2712# a_55_2747# p4 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1164 a_751_2471# p4 vdd w_745_2535# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1165 a_96_2115# a3 vdd w_83_2107# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1166 a_775_978# p2 gnd Gnd nfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1167 a_3414_421# a_3408_488# s2 Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1168 vdd a_752_2825# c5 w_1023_2786# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1169 a_56_2664# b4 vdd w_40_2690# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1170 a_932_1072# a_775_1022# vdd w_926_1117# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1171 a_759_2988# p4 gnd Gnd nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1172 a_1060_2722# a_752_2825# a_1052_2722# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=0 ps=0
+M1173 a_782_2471# a_720_432# a_774_2471# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=0 ps=0
+M1174 a_37_2035# b3 vdd w_21_2061# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1175 c4 a_761_2148# vdd w_1072_1940# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1176 vdd p1 a_759_1645# w_753_1700# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1177 vdd a_751_2471# c5 w_1023_2786# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1178 a_3363_2433# p4 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1179 a_3410_n405# a_3404_n338# s0 Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1180 vdd a_3364_n409# a_3358_n373# w_3345_n381# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1181 a_769_1127# p1 a_762_1127# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=150 ps=70
+M1182 vdd a_720_432# a_751_2471# w_745_2535# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1183 a_1044_2722# a_751_2471# a_1036_2722# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=0 ps=0
+M1184 a_83_2572# a4 vdd w_70_2566# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1185 a_3363_2465# a_3421_2429# s4 w_3402_2457# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1186 a_768_1890# a_162_611# a_761_1890# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=150 ps=70
+M1187 p2 in a_82_1415# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1188 gnd a_720_432# a_782_1645# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1189 a_83_2528# a4 gnd Gnd nfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1190 a_3358_43# p1 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1191 a_50_1275# in a_50_1231# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1192 a_772_2650# p2 a_764_2650# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1193 vdd a_162_611# a_761_1890# w_755_1935# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1194 a_774_1645# p2 a_766_1645# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1195 a_82_1447# out p2 w_121_1439# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1196 p4 a_55_2747# a_115_2744# w_154_2736# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1197 p3 b3 a_96_2083# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1198 s2 a_3408_488# a_3362_453# w_3401_445# pfet w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1199 a_762_1127# p2 vdd w_756_1172# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1200 p3 a_36_2118# a_96_2115# w_135_2107# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1201 a_824_400# a_47_635# a_824_356# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1202 p4 b4 a_115_2712# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1203 a_1093_1885# a_759_1645# a_1085_1885# Gnd nfet w=40 l=2
++  ad=0 pd=0 as=0 ps=0
+M1204 a_198_2548# a_83_2572# vdd w_182_2574# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1205 vdd a_47_635# a_824_400# w_811_394# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1206 a_767_2825# p3 a_759_2825# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=0 ps=0
+M1207 a_3363_2465# p4 vdd w_3350_2457# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1208 a_775_1022# a_162_611# a_775_978# Gnd nfet w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1209 gnd a_3420_417# a_3414_421# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1210 s2 a_824_400# a_3362_421# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=60 ps=32
+M1211 s0 a_3404_n338# a_3358_n373# w_3397_n381# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1212 vdd in a_82_1447# w_69_1439# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1213 a_3358_75# p1 vdd w_3345_67# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1214 a_22_1450# a2 gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1215 a_775_1022# p2 vdd w_762_1016# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1216 a_3362_421# p2 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1217 a_198_2548# a_83_2572# gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1218 vdd a_165_1251# a_752_2825# w_746_2870# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1219 a_749_2650# a_162_611# vdd w_743_2705# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1220 a_3445_1607# a_3439_1674# s3 Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1221 vdd b4 a_115_2744# w_102_2736# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1222 vdd in a_50_1275# w_37_1269# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1223 a_766_2471# p3 a_758_2471# Gnd nfet w=50 l=2
++  ad=0 pd=0 as=0 ps=0
+M1224 vdd b3 a_96_2115# w_83_2107# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1225 gnd a_37_2035# a_148_2083# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1226 a_79_775# a1 gnd Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1227 a_749_2650# p3 vdd w_743_2705# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1228 vdd p3 a_759_1645# w_753_1700# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1229 gnd a_762_1127# a_947_1072# Gnd nfet w=30 l=2
++  ad=0 pd=0 as=0 ps=0
+M1230 vdd a_761_1890# c4 w_1072_1940# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1231 vdd p3 a_751_2471# w_745_2535# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1232 gnd a_56_2664# a_167_2712# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1233 a_3362_453# a_3420_417# s2 w_3401_445# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1234 vdd a_824_400# a_3362_453# w_3349_445# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1235 c5 a_759_3032# vdd w_1023_2786# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1236 vdd a_762_1127# a_932_1072# w_926_1117# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1237 a_22_1450# a2 vdd w_6_1476# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+C0 w_756_1172# a_762_1127# 0.12fF
+C1 a_162_611# p1 0.27fF
+C2 gnd a_726_400# 0.03fF
+C3 p0 2XOR_0/a_79_n18# 0.10fF
+C4 a_3404_n338# a_3358_n373# 0.51fF
+C5 p1 a_79_807# 0.72fF
+C6 inverter1_8/a_n3_52# inverter1_8/a_n11_52# 0.07fF
+C7 gnd a2 0.22fF
+C8 s2 vdd 0.09fF
+C9 gnd a_761_2104# 0.21fF
+C10 w_34_629# a1 0.09fF
+C11 w_746_2870# p4 0.12fF
+C12 w_746_3026# a_179_1919# 0.09fF
+C13 a_1052_2722# a_1060_2722# 0.52fF
+C14 a_720_432# a_3404_110# 0.00fF
+C15 w_748_2142# vdd 0.14fF
+C16 w_34_629# a_47_635# 0.02fF
+C17 a_96_2115# vdd 0.49fF
+C18 w_3349_445# a_3362_453# 0.05fF
+C19 w_811_394# a_824_400# 0.02fF
+C20 w_3401_445# a_3420_417# 0.10fF
+C21 p1 a_759_1645# 0.25fF
+C22 w_39_2773# a_55_2747# 0.05fF
+C23 c4 a_761_2148# 0.15fF
+C24 gnd a_3404_n338# 0.30fF
+C25 w_37_1269# in 0.09fF
+C26 b0 vdd 0.36fF
+C27 c4 a_761_1890# 0.15fF
+C28 inverter1_3/w_n19_78# inverter1_3/a_n11_84# 0.10fF
+C29 w_743_2705# p4 0.14fF
+C30 inverter1_0/a_n9_65# inverter1_0/a_n3_52# 0.04fF
+C31 a_1093_1885# a_1101_1885# 0.41fF
+C32 a_179_1919# a_759_3032# 0.08fF
+C33 w_3397_67# a_3358_75# 0.14fF
+C34 w_753_1700# vdd 0.09fF
+C35 gnd a_3358_n405# 0.10fF
+C36 w_745_2535# p3 0.12fF
+C37 p3 a_752_2825# 0.15fF
+C38 a_179_1919# a_83_2572# 0.05fF
+C39 p4 a_751_2471# 0.15fF
+C40 inverter1_9/w_n19_78# inverter1_9/a_n9_65# 0.06fF
+C41 w_154_2736# a_56_2664# 0.10fF
+C42 w_102_2736# a_115_2744# 0.05fF
+C43 w_40_2690# b4 0.06fF
+C44 inverter1_6/w_n19_78# inverter1_6/a_n3_52# 0.05fF
+C45 inverter1_6/a_n9_65# inverter1_6/a_n11_84# 0.02fF
+C46 a_752_2825# a_749_2650# 1.54fF
+C47 p4 a_115_2744# 0.72fF
+C48 w_745_2535# p2 0.12fF
+C49 a_762_1127# a_775_1022# 0.29fF
+C50 a0 vdd 0.49fF
+C51 a_751_2471# c5 0.15fF
+C52 a_165_1251# a_162_611# 0.15fF
+C53 a_83_2572# b4 0.08fF
+C54 gnd a_83_2528# 0.21fF
+C55 p2 a_50_1275# 0.06fF
+C56 a_756_2650# a_764_2650# 0.41fF
+C57 b4 a_56_2664# 0.04fF
+C58 a1 a_19_810# 0.12fF
+C59 p1 vdd 1.14fF
+C60 2XOR_0/inverter1_0/a_n9_65# 2XOR_0/inverter1_0/a_n3_52# 0.04fF
+C61 a_720_432# c4 0.09fF
+C62 w_135_2107# p3 0.03fF
+C63 a_758_2471# a_766_2471# 0.52fF
+C64 w_3_836# vdd 0.12fF
+C65 inverter1_4/w_n19_78# inverter1_4/a_n3_52# 0.05fF
+C66 inverter1_4/a_n9_65# inverter1_4/a_n11_84# 0.02fF
+C67 a_47_635# a_47_591# 0.21fF
+C68 inverter1_1/a_n9_65# inverter1_1/a_n11_52# 0.05fF
+C69 inverter1_1/a_n11_84# inverter1_1/a_n3_52# 0.21fF
+C70 p3 a_761_1890# 0.08fF
+C71 c5 a_1044_2722# 0.05fF
+C72 a_766_1645# a_774_1645# 0.41fF
+C73 gnd a_3451_1603# 0.11fF
+C74 a_3408_488# a_3362_453# 0.51fF
+C75 s2 a_3414_421# 0.14fF
+C76 inverter1_7/a_n9_65# inverter1_7/a_n3_52# 0.04fF
+C77 a_162_611# a_759_1645# 0.11fF
+C78 p2 a_761_1890# 0.15fF
+C79 w_1023_2786# vdd 0.14fF
+C80 a_3358_75# s1 0.72fF
+C81 a_36_2118# a_96_2115# 0.51fF
+C82 a2 a_22_1450# 0.12fF
+C83 gnd a_752_2825# 0.35fF
+C84 w_755_1935# a_761_1890# 0.12fF
+C85 gnd a_50_1275# 0.09fF
+C86 w_1072_1940# a_759_1645# 0.14fF
+C87 2XOR_0/inverter1_1/a_n9_65# 2XOR_0/inverter1_1/a_n11_52# 0.05fF
+C88 2XOR_0/inverter1_1/a_n11_84# 2XOR_0/inverter1_1/a_n3_52# 0.21fF
+C89 a_64_1943# a_761_1890# 0.09fF
+C90 w_182_2574# a_198_2548# 0.05fF
+C91 w_182_2574# vdd 0.13fF
+C92 gnd a_55_2747# 0.37fF
+C93 p3 a_720_432# 0.10fF
+C94 gnd a_947_1072# 0.31fF
+C95 a_165_1251# vdd 0.44fF
+C96 a_3364_n409# a_3358_n373# 0.08fF
+C97 a_768_1890# a_776_1890# 0.31fF
+C98 inverter1_10/a_n3_52# inverter1_10/a_n11_52# 0.07fF
+C99 inverter1_5/a_n9_65# inverter1_5/a_n3_52# 0.04fF
+C100 gnd a_115_2712# 0.10fF
+C101 w_7_1393# out 0.05fF
+C102 w_121_1439# a_82_1447# 0.14fF
+C103 b0 2XOR_0/Vdd 0.08fF
+C104 2XOR_0/a_125_49# 2XOR_0/a_137_n22# 0.17fF
+C105 2XOR_0/w_118_6# p0 0.03fF
+C106 a_83_2572# a_83_2528# 0.21fF
+C107 gnd a_79_775# 0.10fF
+C108 a_751_2471# p1 0.25fF
+C109 p3 c4 0.01fF
+C110 gnd a_3445_1607# 0.10fF
+C111 a4 vdd 0.75fF
+C112 p3 a_3439_1674# 0.01fF
+C113 p2 a_720_432# 1.18fF
+C114 a_162_611# vdd 0.74fF
+C115 a_79_807# vdd 0.49fF
+C116 inverter1_8/a_n9_65# inverter1_8/a_n11_52# 0.05fF
+C117 inverter1_8/a_n11_84# inverter1_8/a_n3_52# 0.21fF
+C118 gnd a_3404_110# 0.30fF
+C119 a_932_1072# a_939_1072# 0.36fF
+C120 p1 a_824_400# 0.01fF
+C121 w_762_1016# p2 0.09fF
+C122 gnd a_761_2148# 0.12fF
+C123 a_162_611# a_932_1072# 0.05fF
+C124 w_66_799# a_19_810# 0.07fF
+C125 a_3358_n373# s0 0.72fF
+C126 w_3349_445# p2 0.10fF
+C127 w_146_637# a_162_611# 0.05fF
+C128 gnd a_761_1890# 0.23fF
+C129 w_83_2107# vdd 0.12fF
+C130 a0 2XOR_0/Vdd 0.20fF
+C131 2NAND1_0/out b0 0.08fF
+C132 w_746_2870# a_165_1251# 0.12fF
+C133 a_37_2035# vdd 0.21fF
+C134 w_3349_445# a_3408_488# 0.07fF
+C135 w_1072_1940# vdd 0.09fF
+C136 w_811_394# a_47_635# 0.09fF
+C137 w_1023_2786# a_751_2471# 0.12fF
+C138 a_759_1645# vdd 1.10fF
+C139 w_37_1269# a2 0.09fF
+C140 w_811_394# a_726_400# 0.09fF
+C141 c4 a_64_1943# 0.15fF
+C142 w_154_2736# p4 0.03fF
+C143 p0 vdd 0.20fF
+C144 w_3397_67# a_3404_110# 0.10fF
+C145 p4 a_179_1919# 0.32fF
+C146 inverter1_3/a_n3_52# inverter1_3/a_n11_52# 0.07fF
+C147 gnd s0 0.05fF
+C148 a_759_3032# a_752_2825# 1.85fF
+C149 w_102_2736# b4 0.10fF
+C150 inverter1_6/w_n19_78# inverter1_6/a_n9_65# 0.06fF
+C151 a_759_2825# a_767_2825# 0.31fF
+C152 p3 a_749_2650# 0.15fF
+C153 w_743_2705# a_162_611# 0.14fF
+C154 a_50_1275# a_775_1022# 0.41fF
+C155 p3 p2 2.17fF
+C156 p0 w_3345_n381# 0.10fF
+C157 p2 a_82_1415# 0.10fF
+C158 gnd a_720_432# 0.41fF
+C159 inverter1_0/w_n19_78# inverter1_0/a_n11_84# 0.10fF
+C160 a_751_2471# a_162_611# 0.05fF
+C161 a_749_2650# p2 0.15fF
+C162 a_55_2747# a_56_2664# 0.17fF
+C163 gnd c4 0.14fF
+C164 c5 a_1036_2722# 0.57fF
+C165 a_198_2548# vdd 0.21fF
+C166 2XOR_0/inverter1_0/w_n19_78# 2XOR_0/inverter1_0/a_n11_84# 0.10fF
+C167 gnd a_3439_1674# 0.30fF
+C168 w_6_1476# vdd 0.12fF
+C169 b1 a_79_807# 0.08fF
+C170 w_756_1172# a_720_432# 0.12fF
+C171 w_926_1117# vdd 0.11fF
+C172 p2 a_3408_488# 0.01fF
+C173 inverter1_4/w_n19_78# inverter1_4/a_n9_65# 0.06fF
+C174 w_755_1935# p3 0.12fF
+C175 a_932_1072# vdd 0.92fF
+C176 inverter1_1/w_n19_78# inverter1_1/a_n3_52# 0.05fF
+C177 inverter1_1/a_n9_65# inverter1_1/a_n11_84# 0.02fF
+C178 p3 a_64_1943# 0.09fF
+C179 w_146_637# vdd 0.13fF
+C180 w_926_1117# a_932_1072# 0.12fF
+C181 w_3345_67# p1 0.10fF
+C182 w_3345_n381# vdd 0.12fF
+C183 w_3397_n381# a_3416_n409# 0.10fF
+C184 w_755_1935# p2 0.12fF
+C185 a_824_400# a_824_356# 0.21fF
+C186 inverter1_7/w_n19_78# inverter1_7/a_n11_84# 0.10fF
+C187 p2 a_64_1943# 0.07fF
+C188 w_746_2870# vdd 0.12fF
+C189 w_83_2107# a_36_2118# 0.07fF
+C190 a_3404_110# s1 0.08fF
+C191 a_3416_39# a_3358_75# 0.12fF
+C192 a_36_2118# a_37_2035# 0.17fF
+C193 b3 a_64_1943# 0.08fF
+C194 gnd s4 0.05fF
+C195 c4 a_3363_2465# 0.08fF
+C196 gnd p3 0.14fF
+C197 gnd a_82_1415# 0.10fF
+C198 2XOR_0/inverter1_1/w_n19_78# 2XOR_0/inverter1_1/a_n3_52# 0.05fF
+C199 2XOR_0/inverter1_1/a_n9_65# 2XOR_0/inverter1_1/a_n11_84# 0.02fF
+C200 gnd a_3393_1607# 0.10fF
+C201 w_743_2705# vdd 0.12fF
+C202 gnd a_749_2650# 0.25fF
+C203 a_1044_2722# a_1052_2722# 0.52fF
+C204 gnd a_777_1127# 0.31fF
+C205 a_761_1890# a_776_1890# 0.05fF
+C206 inverter1_10/a_n9_65# inverter1_10/a_n11_52# 0.05fF
+C207 inverter1_10/a_n11_84# inverter1_10/a_n3_52# 0.21fF
+C208 inverter1_5/w_n19_78# inverter1_5/a_n11_84# 0.10fF
+C209 a_82_1447# vdd 0.49fF
+C210 s3 vdd 0.09fF
+C211 inverter1_2/a_n9_65# inverter1_2/a_n3_52# 0.04fF
+C212 gnd p2 0.04fF
+C213 a_749_2650# a_772_2650# 0.05fF
+C214 a_83_2572# a_720_432# 0.10fF
+C215 gnd a_20_727# 0.18fF
+C216 2XOR_0/w_66_6# 2XOR_0/a_79_14# 0.05fF
+C217 b0 2XOR_0/a_125_49# 0.00fF
+C218 a_751_2471# vdd 1.39fF
+C219 p1 a_762_1127# 0.15fF
+C220 w_149_1277# a_165_1251# 0.05fF
+C221 w_37_1269# a_50_1275# 0.02fF
+C222 2XOR_0/a_137_n22# 2XOR_0/gnd 0.11fF
+C223 a_751_2471# a_782_2471# 0.05fF
+C224 gnd a_3408_488# 0.30fF
+C225 a_115_2744# vdd 0.49fF
+C226 b1 vdd 0.46fF
+C227 inverter1_8/w_n19_78# inverter1_8/a_n3_52# 0.05fF
+C228 inverter1_8/a_n9_65# inverter1_8/a_n11_84# 0.02fF
+C229 w_762_1016# a_775_1022# 0.02fF
+C230 gnd a_726_356# 0.21fF
+C231 a_1085_1885# a_1093_1885# 0.41fF
+C232 p1 a_47_635# 0.17fF
+C233 w_756_1172# p2 0.12fF
+C234 a_824_400# vdd 0.65fF
+C235 gnd b3 0.22fF
+C236 w_3_836# a1 0.07fF
+C237 gnd a_3410_43# 0.10fF
+C238 p1 a_726_400# 0.08fF
+C239 gnd a_64_1943# 0.09fF
+C240 a0 2XOR_0/a_125_49# 0.01fF
+C241 a_36_2118# vdd 0.21fF
+C242 a_3363_2465# s4 0.72fF
+C243 in vdd 0.46fF
+C244 w_163_1945# vdd 0.13fF
+C245 w_69_1439# a_22_1450# 0.07fF
+C246 a_759_1645# a_774_1645# 0.05fF
+C247 inverter1_3/a_n9_65# inverter1_3/a_n11_52# 0.05fF
+C248 inverter1_3/a_n11_84# inverter1_3/a_n3_52# 0.21fF
+C249 w_745_2535# p4 0.12fF
+C250 inverter1_0/a_n3_52# inverter1_0/a_n11_52# 0.07fF
+C251 p4 a_752_2825# 0.15fF
+C252 w_70_2566# a_83_2572# 0.02fF
+C253 w_102_2736# a_55_2747# 0.07fF
+C254 p2 m1_3285_428# 0.15fF
+C255 a_752_2825# a_759_2825# 0.36fF
+C256 p4 a_55_2747# 0.08fF
+C257 p3 a_83_2572# 0.10fF
+C258 2NAND1_0/out 2NAND1_0/a_3_n40# 0.21fF
+C259 inverter1_9/a_n9_65# inverter1_9/a_n3_52# 0.04fF
+C260 a_50_1275# a_50_1231# 0.21fF
+C261 a_752_2825# c5 0.15fF
+C262 p4 a_115_2712# 0.10fF
+C263 w_3402_2457# s4 0.03fF
+C264 p2 out 0.13fF
+C265 gnd a_772_2650# 0.41fF
+C266 2NAND1_0/out vdd 0.58fF
+C267 a_83_2572# p2 0.05fF
+C268 a4 b4 0.56fF
+C269 gnd a_782_1645# 0.41fF
+C270 a_19_810# a_20_727# 0.17fF
+C271 2XOR_0/inverter1_0/a_n3_52# 2XOR_0/inverter1_0/a_n11_52# 0.07fF
+C272 a_162_611# a_47_635# 0.11fF
+C273 w_3397_n381# a_3404_n338# 0.10fF
+C274 w_149_1277# vdd 0.13fF
+C275 inverter1_1/w_n19_78# inverter1_1/a_n9_65# 0.06fF
+C276 p3 a_96_2083# 0.10fF
+C277 in a_82_1447# 0.08fF
+C278 w_4_753# vdd 0.11fF
+C279 w_713_394# p1 0.09fF
+C280 w_3345_67# vdd 0.12fF
+C281 p2 a_22_1450# 0.08fF
+C282 a_3362_453# s2 0.72fF
+C283 inverter1_7/a_n3_52# inverter1_7/a_n11_52# 0.07fF
+C284 w_20_2144# a3 0.07fF
+C285 a_3404_110# a_3416_39# 0.17fF
+C286 a3 b3 0.56fF
+C287 w_51_1937# b3 0.09fF
+C288 w_135_2107# a_96_2115# 0.14fF
+C289 w_748_2142# a_761_2148# 0.02fF
+C290 w_21_2061# a_37_2035# 0.05fF
+C291 s1 a_3410_43# 0.14fF
+C292 a_3393_1639# vdd 0.49fF
+C293 gnd a_759_3032# 0.22fF
+C294 w_3432_1631# s3 0.03fF
+C295 gnd out 0.18fF
+C296 w_51_1937# a_64_1943# 0.02fF
+C297 2XOR_0/inverter1_1/w_n19_78# 2XOR_0/inverter1_1/a_n9_65# 0.06fF
+C298 gnd a_83_2572# 0.28fF
+C299 gnd a_775_1022# 0.13fF
+C300 a_932_1072# a_3393_1639# 0.08fF
+C301 a_179_1919# vdd 0.46fF
+C302 w_745_2535# p1 0.12fF
+C303 inverter1_10/w_n19_78# inverter1_10/a_n3_52# 0.05fF
+C304 inverter1_10/a_n9_65# inverter1_10/a_n11_84# 0.02fF
+C305 inverter1_2/w_n19_78# inverter1_2/a_n11_84# 0.10fF
+C306 gnd a_56_2664# 0.18fF
+C307 gnd a_19_810# 0.37fF
+C308 2XOR_0/w_118_6# 2XOR_0/a_125_49# 0.10fF
+C309 a_749_2650# a_756_2650# 0.47fF
+C310 p4 c4 0.29fF
+C311 inverter1_5/a_n3_52# inverter1_5/a_n11_52# 0.07fF
+C312 w_3350_2457# c4 0.10fF
+C313 p1 a_50_1275# 0.10fF
+C314 a_762_1127# vdd 0.93fF
+C315 p1 m1_3281_50# 0.15fF
+C316 gnd a_47_591# 0.21fF
+C317 a_751_2471# a_766_2471# 0.05fF
+C318 2XOR_0/a_125_49# p0 0.08fF
+C319 2XOR_0/a_137_n22# 2XOR_0/a_79_14# 0.12fF
+C320 b4 vdd 0.46fF
+C321 a1 vdd 0.75fF
+C322 inverter1_8/w_n19_78# inverter1_8/a_n9_65# 0.06fF
+C323 w_926_1117# a_762_1127# 0.12fF
+C324 p0 2XOR_0/a_131_n18# 0.14fF
+C325 2XOR_0/gnd 2XOR_0/a_79_n18# 0.10fF
+C326 gnd a_3362_421# 0.10fF
+C327 a_932_1072# a_762_1127# 0.08fF
+C328 p0 a_3404_n338# 0.01fF
+C329 p1 a_79_775# 0.10fF
+C330 a_47_635# vdd 0.72fF
+C331 gnd a3 0.22fF
+C332 a_3421_2429# s4 0.13fF
+C333 gnd s1 0.05fF
+C334 gnd a_22_1450# 0.37fF
+C335 gnd a_96_2083# 0.10fF
+C336 a_726_400# vdd 0.73fF
+C337 w_118_799# a_20_727# 0.10fF
+C338 w_66_799# a_79_807# 0.05fF
+C339 w_4_753# b1 0.06fF
+C340 2NAND1_0/w_n10_n2# b0 0.09fF
+C341 w_746_3026# a_759_3032# 0.02fF
+C342 p1 a_3404_110# 0.01fF
+C343 gnd a_776_1890# 0.31fF
+C344 a_3358_75# vdd 0.49fF
+C345 w_146_637# a_47_635# 0.06fF
+C346 w_21_2061# vdd 0.11fF
+C347 a2 vdd 0.75fF
+C348 w_1023_2786# a_752_2825# 0.12fF
+C349 w_6_1476# a2 0.07fF
+C350 w_3401_445# a_3362_453# 0.14fF
+C351 a_3393_1639# s3 0.72fF
+C352 inverter1_3/w_n19_78# inverter1_3/a_n3_52# 0.05fF
+C353 inverter1_3/a_n9_65# inverter1_3/a_n11_84# 0.02fF
+C354 inverter1_0/a_n9_65# inverter1_0/a_n11_52# 0.05fF
+C355 inverter1_0/a_n11_84# inverter1_0/a_n3_52# 0.21fF
+C356 p4 p3 1.20fF
+C357 w_753_1700# a_720_432# 0.14fF
+C358 w_3402_2457# a_3363_2465# 0.14fF
+C359 2NAND1_0/w_n10_n2# a0 0.09fF
+C360 w_3397_67# s1 0.03fF
+C361 w_3380_1631# vdd 0.12fF
+C362 a_165_1251# a_752_2825# 0.08fF
+C363 p4 a_749_2650# 0.15fF
+C364 inverter1_9/w_n19_78# inverter1_9/a_n11_84# 0.10fF
+C365 w_154_2736# a_115_2744# 0.14fF
+C366 w_40_2690# a_56_2664# 0.05fF
+C367 a_165_1251# a_50_1275# 0.05fF
+C368 inverter1_6/a_n9_65# inverter1_6/a_n3_52# 0.04fF
+C369 w_3380_1631# a_932_1072# 0.10fF
+C370 p4 p2 0.12fF
+C371 s4 a_3415_2433# 0.14fF
+C372 a_762_1127# a_769_1127# 0.36fF
+C373 a4 a_55_2747# 0.12fF
+C374 a_749_2650# c5 0.15fF
+C375 w_3345_n381# a_3404_n338# 0.07fF
+C376 a_939_1072# a_947_1072# 0.31fF
+C377 b4 a_115_2744# 0.08fF
+C378 c4 a_1101_1885# 0.05fF
+C379 a1 b1 0.56fF
+C380 a_720_432# p1 1.35fF
+C381 2XOR_0/inverter1_0/a_n9_65# 2XOR_0/inverter1_0/a_n11_52# 0.05fF
+C382 2XOR_0/inverter1_0/a_n11_84# 2XOR_0/inverter1_0/a_n3_52# 0.21fF
+C383 w_7_1393# vdd 0.11fF
+C384 w_163_1945# a_179_1919# 0.05fF
+C385 b1 a_47_635# 0.08fF
+C386 w_748_2142# p3 0.09fF
+C387 p1 c4 0.09fF
+C388 p3 a_96_2115# 0.72fF
+C389 a_165_1251# a_761_2148# 0.08fF
+C390 a_22_1450# out 0.17fF
+C391 w_66_799# vdd 0.12fF
+C392 gnd a_3421_2429# 0.11fF
+C393 inverter1_4/a_n9_65# inverter1_4/a_n3_52# 0.04fF
+C394 a_47_635# a_824_400# 0.08fF
+C395 c4 a_3409_2500# 0.00fF
+C396 w_3397_n381# s0 0.03fF
+C397 w_713_394# vdd 0.15fF
+C398 a_3408_488# s2 0.08fF
+C399 a_3420_417# a_3362_453# 0.12fF
+C400 a_162_611# a_761_2148# 0.05fF
+C401 a_1036_2722# a_1044_2722# 0.52fF
+C402 w_753_1700# p3 0.14fF
+C403 a_162_611# a_761_1890# 0.27fF
+C404 inverter1_7/a_n9_65# inverter1_7/a_n11_52# 0.05fF
+C405 inverter1_7/a_n11_84# inverter1_7/a_n3_52# 0.21fF
+C406 w_3432_1631# a_3393_1639# 0.14fF
+C407 w_51_1937# a3 0.09fF
+C408 w_135_2107# a_37_2035# 0.10fF
+C409 b3 a_96_2115# 0.08fF
+C410 w_753_1700# p2 0.14fF
+C411 gnd p4 0.11fF
+C412 a2 in 0.56fF
+C413 w_1072_1940# a_761_2148# 0.14fF
+C414 w_1072_1940# a_761_1890# 0.14fF
+C415 gnd a_50_1231# 0.21fF
+C416 a_64_1943# a_64_1899# 0.21fF
+C417 a_759_1645# a_761_1890# 1.41fF
+C418 inverter1_10/w_n19_78# inverter1_10/a_n9_65# 0.06fF
+C419 w_745_2535# vdd 0.16fF
+C420 gnd c5 0.15fF
+C421 2XOR_0/w_66_6# b0 0.10fF
+C422 gnd a_775_978# 0.21fF
+C423 p0 a_3364_n409# 0.28fF
+C424 a_165_1251# a_720_432# 0.07fF
+C425 p3 p1 0.19fF
+C426 a_752_2825# vdd 0.84fF
+C427 inverter1_5/a_n9_65# inverter1_5/a_n11_52# 0.05fF
+C428 inverter1_5/a_n11_84# inverter1_5/a_n3_52# 0.21fF
+C429 gnd a_3415_2433# 0.10fF
+C430 a_50_1275# vdd 0.70fF
+C431 inverter1_2/a_n3_52# inverter1_2/a_n11_52# 0.07fF
+C432 a_3409_2500# s4 0.08fF
+C433 gnd a_167_2712# 0.10fF
+C434 a_3421_2429# a_3363_2465# 0.12fF
+C435 gnd a_131_775# 0.10fF
+C436 b0 2XOR_0/a_79_14# 0.08fF
+C437 a_165_1251# c4 0.06fF
+C438 a_55_2747# vdd 0.21fF
+C439 w_926_1117# a_50_1275# 0.12fF
+C440 p2 p1 1.25fF
+C441 gnd s2 0.05fF
+C442 a_162_611# a_720_432# 0.25fF
+C443 p0 2XOR_0/gnd 0.04fF
+C444 a_932_1072# a_50_1275# 0.15fF
+C445 p1 a_20_727# 0.13fF
+C446 w_121_1439# p2 0.03fF
+C447 gnd a_3416_39# 0.11fF
+C448 a_932_1072# a_947_1072# 0.05fF
+C449 a_3362_453# vdd 0.49fF
+C450 w_762_1016# a_162_611# 0.09fF
+C451 w_66_799# b1 0.10fF
+C452 w_118_799# a_19_810# 0.10fF
+C453 a0 2XOR_0/w_66_6# 0.10fF
+C454 w_746_3026# p4 0.09fF
+C455 a_3451_1603# s3 0.13fF
+C456 p3 m1_3316_1614# 0.15fF
+C457 gnd a_64_1899# 0.21fF
+C458 gnd b0 0.16fF
+C459 a_761_2148# vdd 0.47fF
+C460 w_746_2870# a_752_2825# 0.12fF
+C461 a_3364_n409# vdd 0.18fF
+C462 a_3404_n338# a_3416_n409# 0.17fF
+C463 w_3402_2457# a_3421_2429# 0.10fF
+C464 w_3350_2457# a_3363_2465# 0.05fF
+C465 w_3401_445# a_3408_488# 0.10fF
+C466 a_720_432# a_759_1645# 0.25fF
+C467 w_39_2773# a4 0.07fF
+C468 a_761_1890# vdd 0.87fF
+C469 w_1023_2786# a_749_2650# 0.12fF
+C470 w_7_1393# in 0.06fF
+C471 w_1072_1940# c4 0.21fF
+C472 inverter1_3/w_n19_78# inverter1_3/a_n9_65# 0.06fF
+C473 c4 a_759_1645# 0.15fF
+C474 inverter1_0/a_n9_65# inverter1_0/a_n11_84# 0.02fF
+C475 p0 a_720_432# 0.32fF
+C476 w_3345_67# a_3358_75# 0.05fF
+C477 w_3397_67# a_3416_39# 0.10fF
+C478 s4 a_3363_2433# 0.10fF
+C479 gnd a_1060_2722# 0.52fF
+C480 p3 a_165_1251# 0.68fF
+C481 a0 gnd 0.16fF
+C482 w_3345_n381# a_3364_n409# 0.10fF
+C483 w_70_2566# a4 0.09fF
+C484 w_745_2535# a_751_2471# 0.18fF
+C485 inverter1_6/w_n19_78# inverter1_6/a_n11_84# 0.10fF
+C486 p4 a_56_2664# 0.13fF
+C487 a_759_3032# c5 0.15fF
+C488 gnd a_1101_1885# 0.41fF
+C489 inverter1_9/a_n3_52# inverter1_9/a_n11_52# 0.07fF
+C490 c4 a_1093_1885# 0.05fF
+C491 2NAND1_0/w_n10_n2# vdd 0.22fF
+C492 a_83_2572# c5 0.15fF
+C493 a_165_1251# p2 0.21fF
+C494 p3 a_162_611# 0.11fF
+C495 p2 a_134_1415# 0.14fF
+C496 gnd p1 0.30fF
+C497 a_775_1022# a_775_978# 0.21fF
+C498 s3 a_3445_1607# 0.14fF
+C499 inverter1_0/w_n19_78# inverter1_0/a_n3_52# 0.05fF
+C500 a_55_2747# a_115_2744# 0.51fF
+C501 a_749_2650# a_162_611# 0.21fF
+C502 gnd a_3409_2500# 0.30fF
+C503 a_720_432# vdd 0.68fF
+C504 p2 a_162_611# 1.00fF
+C505 2XOR_0/inverter1_0/w_n19_78# 2XOR_0/inverter1_0/a_n3_52# 0.05fF
+C506 2XOR_0/inverter1_0/a_n9_65# 2XOR_0/inverter1_0/a_n11_84# 0.02fF
+C507 w_3397_n381# a_3358_n373# 0.14fF
+C508 w_69_1439# vdd 0.12fF
+C509 a_20_727# a_79_807# 0.12fF
+C510 c4 vdd 1.15fF
+C511 p3 a_37_2035# 0.13fF
+C512 w_756_1172# p1 0.12fF
+C513 w_762_1016# vdd 0.14fF
+C514 inverter1_4/w_n19_78# inverter1_4/a_n11_84# 0.10fF
+C515 a_720_432# a_932_1072# 0.10fF
+C516 inverter1_1/a_n9_65# inverter1_1/a_n3_52# 0.04fF
+C517 p3 a_759_1645# 0.15fF
+C518 a_165_1251# a_64_1943# 0.05fF
+C519 in a_50_1275# 0.08fF
+C520 w_3432_1631# a_3451_1603# 0.10fF
+C521 w_3380_1631# a_3393_1639# 0.05fF
+C522 w_3349_445# vdd 0.12fF
+C523 a_47_635# a_726_400# 0.17fF
+C524 a_824_400# a_3362_453# 0.08fF
+C525 a_3408_488# a_3420_417# 0.17fF
+C526 a_932_1072# a_3439_1674# 0.00fF
+C527 s2 a_3362_421# 0.10fF
+C528 w_755_1935# a_162_611# 0.12fF
+C529 inverter1_7/w_n19_78# inverter1_7/a_n3_52# 0.05fF
+C530 inverter1_7/a_n9_65# inverter1_7/a_n11_84# 0.02fF
+C531 p2 a_759_1645# 0.15fF
+C532 a_162_611# a_64_1943# 0.07fF
+C533 w_39_2773# vdd 0.12fF
+C534 w_135_2107# a_36_2118# 0.10fF
+C535 w_83_2107# b3 0.10fF
+C536 a_3416_39# s1 0.13fF
+C537 b3 a_37_2035# 0.04fF
+C538 gnd a_3363_2433# 0.10fF
+C539 a_3409_2500# a_3363_2465# 0.51fF
+C540 gnd a_165_1251# 0.17fF
+C541 gnd a_134_1415# 0.10fF
+C542 2XOR_0/inverter1_1/a_n9_65# 2XOR_0/inverter1_1/a_n3_52# 0.04fF
+C543 w_1072_1940# a_64_1943# 0.14fF
+C544 a_64_1943# a_759_1645# 0.46fF
+C545 w_70_2566# vdd 0.22fF
+C546 gnd a4 0.22fF
+C547 s4 vdd 0.09fF
+C548 p3 vdd 1.03fF
+C549 inverter1_5/w_n19_78# inverter1_5/a_n3_52# 0.05fF
+C550 inverter1_5/a_n9_65# inverter1_5/a_n11_84# 0.02fF
+C551 gnd a_162_611# 0.52fF
+C552 inverter1_2/a_n9_65# inverter1_2/a_n11_52# 0.05fF
+C553 inverter1_2/a_n11_84# inverter1_2/a_n3_52# 0.21fF
+C554 w_69_1439# a_82_1447# 0.05fF
+C555 w_121_1439# out 0.10fF
+C556 2XOR_0/w_118_6# 2XOR_0/a_79_14# 0.14fF
+C557 a_751_2471# a_720_432# 0.25fF
+C558 a_83_2572# p1 0.10fF
+C559 a_749_2650# vdd 1.12fF
+C560 p3 a_932_1072# 0.28fF
+C561 gnd a_3420_417# 0.11fF
+C562 w_149_1277# a_50_1275# 0.06fF
+C563 2XOR_0/a_79_14# p0 0.72fF
+C564 p2 vdd 1.28fF
+C565 a_3439_1674# s3 0.08fF
+C566 a_3451_1603# a_3393_1639# 0.12fF
+C567 p1 a_19_810# 0.08fF
+C568 a_20_727# vdd 0.21fF
+C569 inverter1_8/a_n9_65# inverter1_8/a_n3_52# 0.04fF
+C570 gnd a_824_356# 0.21fF
+C571 a_720_432# a_824_400# 0.10fF
+C572 gnd a_37_2035# 0.18fF
+C573 w_3402_2457# a_3409_2500# 0.10fF
+C574 w_66_799# a1 0.10fF
+C575 p2 a_932_1072# 0.01fF
+C576 w_3_836# a_19_810# 0.05fF
+C577 gnd a_759_1645# 0.32fF
+C578 w_20_2144# vdd 0.12fF
+C579 w_1023_2786# a_759_3032# 0.12fF
+C580 w_746_2870# p3 0.12fF
+C581 b3 vdd 0.46fF
+C582 w_3349_445# a_824_400# 0.10fF
+C583 gnd p0 0.11fF
+C584 w_755_1935# vdd 0.11fF
+C585 w_1023_2786# a_83_2572# 0.12fF
+C586 a_64_1943# vdd 0.85fF
+C587 w_121_1439# a_22_1450# 0.10fF
+C588 w_69_1439# in 0.10fF
+C589 w_713_394# a_726_400# 0.02fF
+C590 vdd a_3358_n373# 0.49fF
+C591 a_3416_n409# s0 0.13fF
+C592 a_759_1645# a_782_1645# 0.05fF
+C593 w_3345_67# a_3404_110# 0.07fF
+C594 c4 a_1085_1885# 0.47fF
+C595 w_3350_2457# p4 0.10fF
+C596 w_743_2705# p3 0.14fF
+C597 2NAND1_0/w_n10_n2# 2NAND1_0/out 0.02fF
+C598 w_154_2736# a_55_2747# 0.10fF
+C599 w_182_2574# a_83_2572# 0.06fF
+C600 w_743_2705# a_749_2650# 0.21fF
+C601 s0 a_3410_n405# 0.14fF
+C602 s3 a_3393_1607# 0.10fF
+C603 p4 c5 0.10fF
+C604 a_752_2825# a_767_2825# 0.05fF
+C605 a_165_1251# a_83_2572# 0.01fF
+C606 p3 a_751_2471# 0.15fF
+C607 gnd 2NAND1_0/a_3_n40# 0.21fF
+C608 inverter1_9/a_n9_65# inverter1_9/a_n11_52# 0.05fF
+C609 inverter1_9/a_n11_84# inverter1_9/a_n3_52# 0.21fF
+C610 w_743_2705# p2 0.14fF
+C611 inverter1_6/a_n3_52# inverter1_6/a_n11_52# 0.07fF
+C612 a_50_1275# a_762_1127# 0.10fF
+C613 a_751_2471# a_749_2650# 1.25fF
+C614 p4 a_167_2712# 0.14fF
+C615 w_3345_n381# a_3358_n373# 0.05fF
+C616 p2 a_82_1447# 0.72fF
+C617 gnd a_198_2548# 0.07fF
+C618 gnd vdd 1.10fF
+C619 a_769_1127# a_777_1127# 0.31fF
+C620 inverter1_0/w_n19_78# inverter1_0/a_n9_65# 0.06fF
+C621 a_83_2572# a_162_611# 0.05fF
+C622 a_751_2471# p2 0.15fF
+C623 a_55_2747# b4 0.00fF
+C624 a_162_611# a_775_1022# 0.17fF
+C625 gnd a_782_2471# 0.52fF
+C626 w_3432_1631# a_3439_1674# 0.10fF
+C627 gnd a_932_1072# 0.05fF
+C628 2XOR_0/inverter1_0/w_n19_78# 2XOR_0/inverter1_0/a_n9_65# 0.06fF
+C629 a_19_810# a_79_807# 0.51fF
+C630 b1 a_20_727# 0.04fF
+C631 p3 a_36_2118# 0.08fF
+C632 p2 a_824_400# 0.28fF
+C633 w_756_1172# vdd 0.12fF
+C634 inverter1_1/w_n19_78# inverter1_1/a_n11_84# 0.10fF
+C635 a_774_2471# a_782_2471# 0.52fF
+C636 p3 a_148_2083# 0.14fF
+C637 w_118_799# p1 0.03fF
+C638 w_34_629# vdd 0.22fF
+C639 inverter1_4/a_n3_52# inverter1_4/a_n11_52# 0.07fF
+C640 a_824_400# a_3408_488# 0.00fF
+C641 w_3345_67# a_720_432# 0.10fF
+C642 inverter1_7/w_n19_78# inverter1_7/a_n9_65# 0.06fF
+C643 w_746_3026# vdd 0.15fF
+C644 a_3409_2500# a_3421_2429# 0.17fF
+C645 w_20_2144# a_36_2118# 0.05fF
+C646 w_83_2107# a3 0.10fF
+C647 a_3404_110# a_3358_75# 0.51fF
+C648 a_36_2118# b3 0.00fF
+C649 a_3363_2465# vdd 0.49fF
+C650 a_761_2148# a_761_2104# 0.21fF
+C651 gnd a_759_2988# 0.21fF
+C652 c5 a_1060_2722# 0.05fF
+C653 2XOR_0/inverter1_1/w_n19_78# 2XOR_0/inverter1_1/a_n11_84# 0.10fF
+C654 gnd s3 0.05fF
+C655 w_163_1945# a_64_1943# 0.06fF
+C656 w_40_2690# vdd 0.11fF
+C657 gnd a_751_2471# 0.35fF
+C658 a_3439_1674# a_3393_1639# 0.51fF
+C659 a_761_1890# a_768_1890# 0.36fF
+C660 a_759_3032# vdd 0.48fF
+C661 inverter1_10/a_n9_65# inverter1_10/a_n3_52# 0.04fF
+C662 inverter1_5/w_n19_78# inverter1_5/a_n9_65# 0.06fF
+C663 out vdd 0.21fF
+C664 inverter1_2/w_n19_78# inverter1_2/a_n3_52# 0.05fF
+C665 inverter1_2/a_n9_65# inverter1_2/a_n11_84# 0.02fF
+C666 p4 a_3409_2500# 0.01fF
+C667 a_749_2650# a_764_2650# 0.05fF
+C668 gnd b1 0.22fF
+C669 a_83_2572# a_198_2548# 0.04fF
+C670 2XOR_0/w_66_6# 2XOR_0/Vdd 0.12fF
+C671 2XOR_0/w_118_6# 2XOR_0/a_137_n22# 0.10fF
+C672 a_83_2572# vdd 0.70fF
+C673 a_3364_n409# a_3404_n338# 0.00fF
+C674 w_3350_2457# a_3409_2500# 0.07fF
+C675 a_720_432# a_762_1127# 0.08fF
+C676 a_775_1022# vdd 0.67fF
+C677 a_751_2471# a_774_2471# 0.05fF
+C678 gnd a_824_400# 0.03fF
+C679 2XOR_0/Vdd 2XOR_0/a_79_14# 0.49fF
+C680 2XOR_0/a_137_n22# p0 0.13fF
+C681 2XOR_0/a_125_49# 2XOR_0/gnd 0.30fF
+C682 a_56_2664# vdd 0.21fF
+C683 a_19_810# vdd 0.21fF
+C684 inverter1_8/w_n19_78# inverter1_8/a_n11_84# 0.10fF
+C685 w_926_1117# a_775_1022# 0.12fF
+C686 2XOR_0/gnd 2XOR_0/a_131_n18# 0.10fF
+C687 gnd a_3414_421# 0.10fF
+C688 a_932_1072# a_775_1022# 0.15fF
+C689 p1 a_131_775# 0.14fF
+C690 gnd a_36_2118# 0.37fF
+C691 gnd a_3358_43# 0.10fF
+C692 gnd in 0.22fF
+C693 gnd a_148_2083# 0.10fF
+C694 w_118_799# a_79_807# 0.14fF
+C695 w_34_629# b1 0.09fF
+C696 w_4_753# a_20_727# 0.05fF
+C697 a0 b0 0.56fF
+C698 a3 vdd 0.75fF
+C699 a_3416_n409# a_3358_n373# 0.12fF
+C700 a_720_432# a_3358_75# 0.08fF
+C701 a_3404_n338# s0 0.08fF
+C702 s1 vdd 0.09fF
+C703 a_22_1450# vdd 0.21fF
+C704 w_51_1937# vdd 0.22fF
+C705 w_69_1439# a2 0.10fF
+C706 w_6_1476# a_22_1450# 0.05fF
+C707 w_3401_445# s2 0.03fF
+C708 w_1023_2786# c5 0.18fF
+C709 s0 a_3358_n405# 0.10fF
+C710 a_759_1645# a_766_1645# 0.47fF
+C711 inverter1_3/a_n9_65# inverter1_3/a_n3_52# 0.04fF
+C712 p4 a_165_1251# 0.02fF
+C713 a_759_3032# a_759_2988# 0.21fF
+C714 w_753_1700# p1 0.14fF
+C715 a_179_1919# p3 0.05fF
+C716 w_102_2736# a4 0.10fF
+C717 gnd a_3416_n409# 0.11fF
+C718 out a_82_1447# 0.12fF
+C719 2NAND1_0/out gnd 0.03fF
+C720 inverter1_9/w_n19_78# inverter1_9/a_n3_52# 0.05fF
+C721 inverter1_9/a_n9_65# inverter1_9/a_n11_84# 0.02fF
+C722 w_70_2566# b4 0.09fF
+C723 inverter1_6/a_n9_65# inverter1_6/a_n11_52# 0.05fF
+C724 inverter1_6/a_n11_84# inverter1_6/a_n3_52# 0.21fF
+C725 w_3380_1631# a_3439_1674# 0.07fF
+C726 a_83_2572# a_751_2471# 0.54fF
+C727 gnd a_3410_n405# 0.10fF
+C728 a_762_1127# a_777_1127# 0.05fF
+C729 p2 a_762_1127# 0.15fF
+C730 a_764_2650# a_772_2650# 0.41fF
+C731 a_56_2664# a_115_2744# 0.12fF
+C732 a_19_810# b1 0.00fF
+C733 w_37_1269# vdd 0.22fF
+C734 w_748_2142# a_165_1251# 0.09fF
+C735 a_766_2471# a_774_2471# 0.52fF
+C736 a_179_1919# a_64_1943# 0.12fF
+C737 a_22_1450# a_82_1447# 0.51fF
+C738 in out 0.04fF
+C739 inverter1_4/a_n9_65# inverter1_4/a_n11_52# 0.05fF
+C740 inverter1_4/a_n11_84# inverter1_4/a_n3_52# 0.21fF
+C741 inverter1_1/a_n3_52# inverter1_1/a_n11_52# 0.07fF
+C742 w_713_394# a_720_432# 0.09fF
+C743 a_774_1645# a_782_1645# 0.41fF
+C744 w_811_394# vdd 0.14fF
+C745 a_3420_417# s2 0.13fF
+C746 a_726_400# a_726_356# 0.21fF
+C747 w_3380_1631# p3 0.10fF
+C748 p0 m1_3281_n398# 0.15fF
+C749 c5 a_1052_2722# 0.05fF
+C750 a3 a_36_2118# 0.12fF
+C751 w_21_2061# b3 0.06fF
+C752 a_3439_1674# a_3451_1603# 0.17fF
+C753 w_83_2107# a_96_2115# 0.05fF
+C754 s1 a_3358_43# 0.10fF
+C755 a_37_2035# a_96_2115# 0.12fF
+C756 gnd a_179_1919# 0.07fF
+C757 a_22_1450# in 0.00fF
+C758 a_761_2148# a_761_1890# 1.59fF
+C759 w_102_2736# vdd 0.12fF
+C760 gnd a_767_2825# 0.31fF
+C761 2XOR_0/inverter1_1/a_n3_52# 2XOR_0/inverter1_1/a_n11_52# 0.07fF
+C762 gnd a_762_1127# 0.05fF
+C763 p4 vdd 1.03fF
+C764 w_745_2535# a_720_432# 0.12fF
+C765 inverter1_10/w_n19_78# inverter1_10/a_n11_84# 0.10fF
+C766 inverter1_2/w_n19_78# inverter1_2/a_n9_65# 0.06fF
+C767 gnd b4 0.22fF
+C768 w_3350_2457# vdd 0.12fF
+C769 gnd a1 0.22fF
+C770 2XOR_0/w_66_6# 2XOR_0/a_125_49# 0.07fF
+C771 a_165_1251# p1 0.16fF
+C772 a_720_432# a_50_1275# 0.19fF
+C773 a_751_2471# a_758_2471# 0.57fF
+C774 gnd a_47_635# 0.09fF
+C775 2XOR_0/a_125_49# 2XOR_0/a_79_14# 0.51fF
+C776 w_753_1700# a_759_1645# 0.21fF
+C777 p4 m1_3286_2440# 0.15fF
+C778 c5 vdd 1.24fF
+C779 m1_3281_n398# Gnd 1.15fF **FLOATING
+C780 m1_3281_50# Gnd 1.15fF **FLOATING
+C781 m1_3285_428# Gnd 1.15fF **FLOATING
+C782 m1_3316_1614# Gnd 1.15fF **FLOATING
+C783 m1_3286_2440# Gnd 1.15fF **FLOATING
+C784 a_3410_n405# Gnd 0.01fF
+C785 a_3358_n405# Gnd 0.01fF
+C786 s0 Gnd 0.16fF
+C787 a_3358_n373# Gnd 0.08fF
+C788 vdd Gnd 158.06fF
+C789 a_3416_n409# Gnd 1.03fF
+C790 a_3404_n338# Gnd 1.84fF
+C791 a_3364_n409# Gnd 0.12fF
+C792 a_3410_43# Gnd 0.01fF
+C793 a_3358_43# Gnd 0.01fF
+C794 s1 Gnd 2.06fF
+C795 a_3358_75# Gnd 0.11fF
+C796 a_3416_39# Gnd 1.03fF
+C797 a_3404_110# Gnd 1.84fF
+C798 a_824_356# Gnd 0.01fF
+C799 a_726_356# Gnd 0.01fF
+C800 a_3414_421# Gnd 0.01fF
+C801 a_3362_421# Gnd 0.01fF
+C802 a_726_400# Gnd 0.88fF
+C803 s2 Gnd 2.06fF
+C804 a_3362_453# Gnd 0.11fF
+C805 a_3420_417# Gnd 1.03fF
+C806 a_3408_488# Gnd 1.84fF
+C807 a_824_400# Gnd 12.01fF
+C808 a_47_591# Gnd 0.01fF
+C809 a_47_635# Gnd 4.64fF
+C810 a_131_775# Gnd 0.01fF
+C811 a_79_775# Gnd 0.01fF
+C812 a_79_807# Gnd 0.04fF
+C813 a_20_727# Gnd 1.15fF
+C814 b1 Gnd 9.40fF
+C815 a_19_810# Gnd 0.90fF
+C816 a1 Gnd 0.19fF
+C817 a_775_978# Gnd 0.01fF
+C818 a_947_1072# Gnd 0.01fF
+C819 a_939_1072# Gnd 0.01fF
+C820 a_777_1127# Gnd 0.01fF
+C821 a_769_1127# Gnd 0.01fF
+C822 a_775_1022# Gnd 3.89fF
+C823 a_762_1127# Gnd 2.58fF
+C824 a_50_1231# Gnd 0.01fF
+C825 a_50_1275# Gnd 4.47fF
+C826 a_134_1415# Gnd 0.01fF
+C827 a_82_1415# Gnd 0.01fF
+C828 a_82_1447# Gnd 0.11fF
+C829 out Gnd 1.15fF
+C830 in Gnd 0.16fF
+C831 a_22_1450# Gnd 1.92fF
+C832 a2 Gnd 6.79fF
+C833 a_3445_1607# Gnd 0.01fF
+C834 a_3393_1607# Gnd 0.01fF
+C835 s3 Gnd 2.06fF
+C836 a_3393_1639# Gnd 0.11fF
+C837 a_3451_1603# Gnd 1.03fF
+C838 a_3439_1674# Gnd 1.84fF
+C839 a_932_1072# Gnd 0.23fF
+C840 a_782_1645# Gnd 0.01fF
+C841 a_774_1645# Gnd 0.01fF
+C842 a_766_1645# Gnd 0.01fF
+C843 a_1101_1885# Gnd 0.01fF
+C844 a_1093_1885# Gnd 0.01fF
+C845 a_1085_1885# Gnd 0.01fF
+C846 a_776_1890# Gnd 0.01fF
+C847 a_768_1890# Gnd 0.01fF
+C848 a_64_1899# Gnd 0.01fF
+C849 a_761_1890# Gnd 2.47fF
+C850 a_759_1645# Gnd 3.13fF
+C851 a_64_1943# Gnd 12.72fF
+C852 a_148_2083# Gnd 0.01fF
+C853 a_761_2104# Gnd 0.01fF
+C854 a_761_2148# Gnd 1.86fF
+C855 a_37_2035# Gnd 1.15fF
+C856 b3 Gnd 9.79fF
+C857 a_36_2118# Gnd 0.78fF
+C858 a3 Gnd 0.20fF
+C859 a_3415_2433# Gnd 0.01fF
+C860 a_3363_2433# Gnd 0.01fF
+C861 s4 Gnd 2.06fF
+C862 a_3363_2465# Gnd 0.11fF
+C863 a_3421_2429# Gnd 1.03fF
+C864 a_3409_2500# Gnd 1.84fF
+C865 c4 Gnd 12.57fF
+C866 a_782_2471# Gnd 0.01fF
+C867 a_774_2471# Gnd 0.01fF
+C868 a_766_2471# Gnd 0.01fF
+C869 a_758_2471# Gnd 0.01fF
+C870 a_83_2528# Gnd 0.01fF
+C871 p1 Gnd 0.07fF
+C872 a_720_432# Gnd 86.54fF
+C873 a_198_2548# Gnd 0.13fF
+C874 a_772_2650# Gnd 0.01fF
+C875 a_764_2650# Gnd 0.01fF
+C876 a_756_2650# Gnd 0.01fF
+C877 a_1060_2722# Gnd 0.01fF
+C878 a_1052_2722# Gnd 0.01fF
+C879 a_1044_2722# Gnd 0.01fF
+C880 a_1036_2722# Gnd 0.01fF
+C881 a_167_2712# Gnd 0.01fF
+C882 a_115_2712# Gnd 0.01fF
+C883 a_162_611# Gnd 5.28fF
+C884 p2 Gnd 0.04fF
+C885 a_115_2744# Gnd 0.11fF
+C886 a_56_2664# Gnd 1.15fF
+C887 b4 Gnd 10.21fF
+C888 c5 Gnd 6.47fF
+C889 a_55_2747# Gnd 1.92fF
+C890 a4 Gnd 7.53fF
+C891 a_749_2650# Gnd 2.60fF
+C892 a_751_2471# Gnd 2.92fF
+C893 a_83_2572# Gnd 6.47fF
+C894 a_767_2825# Gnd 0.01fF
+C895 a_759_2825# Gnd 0.01fF
+C896 a_752_2825# Gnd 2.26fF
+C897 a_165_1251# Gnd 8.76fF
+C898 p3 Gnd 0.16fF
+C899 a_759_2988# Gnd 0.01fF
+C900 a_759_3032# Gnd 1.87fF
+C901 a_179_1919# Gnd 2.68fF
+C902 p4 Gnd 47.24fF
+C903 w_3397_n381# Gnd 1.16fF
+C904 w_3345_n381# Gnd 1.16fF
+C905 w_3397_67# Gnd 1.16fF
+C906 w_3345_67# Gnd 1.16fF
+C907 w_811_394# Gnd 1.09fF
+C908 w_713_394# Gnd 1.06fF
+C909 w_3401_445# Gnd 1.16fF
+C910 w_3349_445# Gnd 1.16fF
+C911 w_146_637# Gnd 1.03fF
+C912 w_34_629# Gnd 1.09fF
+C913 w_4_753# Gnd 1.03fF
+C914 w_118_799# Gnd 1.16fF
+C915 w_66_799# Gnd 1.16fF
+C916 w_3_836# Gnd 1.03fF
+C917 w_762_1016# Gnd 1.09fF
+C918 w_926_1117# Gnd 1.61fF
+C919 w_756_1172# Gnd 1.61fF
+C920 w_149_1277# Gnd 1.03fF
+C921 w_37_1269# Gnd 1.09fF
+C922 w_7_1393# Gnd 1.03fF
+C923 w_121_1439# Gnd 1.16fF
+C924 w_69_1439# Gnd 1.16fF
+C925 w_6_1476# Gnd 1.03fF
+C926 w_3432_1631# Gnd 1.16fF
+C927 w_3380_1631# Gnd 1.16fF
+C928 w_753_1700# Gnd 2.07fF
+C929 w_1072_1940# Gnd 2.07fF
+C930 w_755_1935# Gnd 1.61fF
+C931 w_163_1945# Gnd 1.03fF
+C932 w_51_1937# Gnd 1.09fF
+C933 w_21_2061# Gnd 1.03fF
+C934 w_748_2142# Gnd 1.09fF
+C935 w_135_2107# Gnd 1.16fF
+C936 w_83_2107# Gnd 0.80fF
+C937 w_20_2144# Gnd 1.03fF
+C938 w_3402_2457# Gnd 1.16fF
+C939 w_3350_2457# Gnd 1.16fF
+C940 w_745_2535# Gnd 2.19fF
+C941 w_182_2574# Gnd 1.03fF
+C942 w_70_2566# Gnd 1.09fF
+C943 w_743_2705# Gnd 2.07fF
+C944 w_40_2690# Gnd 1.03fF
+C945 w_154_2736# Gnd 1.16fF
+C946 w_102_2736# Gnd 1.16fF
+C947 w_1023_2786# Gnd 2.19fF
+C948 w_39_2773# Gnd 1.03fF
+C949 w_746_2870# Gnd 1.61fF
+C950 w_746_3026# Gnd 1.09fF
+C951 inverter1_10/a_n11_52# Gnd 0.15fF
+C952 inverter1_10/a_n3_52# Gnd 0.13fF
+C953 inverter1_10/a_n11_84# Gnd 0.04fF
+C954 inverter1_10/a_n9_65# Gnd 0.22fF
+C955 inverter1_10/w_n19_78# Gnd 1.03fF
+C956 inverter1_9/a_n11_52# Gnd 0.15fF
+C957 inverter1_9/a_n3_52# Gnd 0.13fF
+C958 inverter1_9/a_n11_84# Gnd 0.04fF
+C959 inverter1_9/a_n9_65# Gnd 0.22fF
+C960 inverter1_9/w_n19_78# Gnd 1.03fF
+C961 inverter1_8/a_n11_52# Gnd 0.15fF
+C962 inverter1_8/a_n3_52# Gnd 0.13fF
+C963 inverter1_8/a_n11_84# Gnd 0.04fF
+C964 inverter1_8/a_n9_65# Gnd 0.22fF
+C965 inverter1_8/w_n19_78# Gnd 1.03fF
+C966 inverter1_7/a_n11_52# Gnd 0.15fF
+C967 inverter1_7/a_n3_52# Gnd 0.13fF
+C968 inverter1_7/a_n11_84# Gnd 0.04fF
+C969 inverter1_7/a_n9_65# Gnd 0.22fF
+C970 inverter1_7/w_n19_78# Gnd 1.03fF
+C971 inverter1_6/a_n11_52# Gnd 0.15fF
+C972 inverter1_6/a_n3_52# Gnd 0.13fF
+C973 inverter1_6/a_n11_84# Gnd 0.04fF
+C974 inverter1_6/a_n9_65# Gnd 0.22fF
+C975 inverter1_6/w_n19_78# Gnd 1.03fF
+C976 2XOR_0/a_131_n18# Gnd 0.01fF
+C977 2XOR_0/a_79_n18# Gnd 0.01fF
+C978 2XOR_0/gnd Gnd 1.44fF
+C979 p0 Gnd 28.23fF
+C980 2XOR_0/a_79_14# Gnd 0.11fF
+C981 2XOR_0/Vdd Gnd 0.24fF
+C982 2XOR_0/a_137_n22# Gnd 1.03fF
+C983 2XOR_0/a_125_49# Gnd 1.84fF
+C984 b0 Gnd 8.99fF
+C985 2XOR_0/w_118_6# Gnd 1.16fF
+C986 2XOR_0/w_66_6# Gnd 1.16fF
+C987 2XOR_0/inverter1_1/a_n11_52# Gnd 0.15fF
+C988 2XOR_0/inverter1_1/a_n3_52# Gnd 0.13fF
+C989 2XOR_0/inverter1_1/a_n11_84# Gnd 0.04fF
+C990 2XOR_0/inverter1_1/a_n9_65# Gnd 0.22fF
+C991 2XOR_0/inverter1_1/w_n19_78# Gnd 1.03fF
+C992 2XOR_0/inverter1_0/a_n11_52# Gnd 0.15fF
+C993 2XOR_0/inverter1_0/a_n3_52# Gnd 0.13fF
+C994 2XOR_0/inverter1_0/a_n11_84# Gnd 0.04fF
+C995 2XOR_0/inverter1_0/a_n9_65# Gnd 0.22fF
+C996 2XOR_0/inverter1_0/w_n19_78# Gnd 1.03fF
+C997 inverter1_5/a_n11_52# Gnd 0.15fF
+C998 inverter1_5/a_n3_52# Gnd 0.13fF
+C999 inverter1_5/a_n11_84# Gnd 0.04fF
+C1000 inverter1_5/a_n9_65# Gnd 0.22fF
+C1001 inverter1_5/w_n19_78# Gnd 1.03fF
+C1002 inverter1_4/a_n11_52# Gnd 0.15fF
+C1003 inverter1_4/a_n3_52# Gnd 0.13fF
+C1004 inverter1_4/a_n11_84# Gnd 0.04fF
+C1005 inverter1_4/a_n9_65# Gnd 0.22fF
+C1006 inverter1_4/w_n19_78# Gnd 1.03fF
+C1007 inverter1_3/a_n11_52# Gnd 0.15fF
+C1008 inverter1_3/a_n3_52# Gnd 0.13fF
+C1009 inverter1_3/a_n11_84# Gnd 0.04fF
+C1010 inverter1_3/a_n9_65# Gnd 0.22fF
+C1011 inverter1_3/w_n19_78# Gnd 1.03fF
+C1012 inverter1_2/a_n11_52# Gnd 0.15fF
+C1013 inverter1_2/a_n3_52# Gnd 0.13fF
+C1014 inverter1_2/a_n11_84# Gnd 0.04fF
+C1015 inverter1_2/a_n9_65# Gnd 0.22fF
+C1016 inverter1_2/w_n19_78# Gnd 1.03fF
+C1017 inverter1_1/a_n11_52# Gnd 0.15fF
+C1018 inverter1_1/a_n3_52# Gnd 0.13fF
+C1019 inverter1_1/a_n11_84# Gnd 0.04fF
+C1020 inverter1_1/a_n9_65# Gnd 0.22fF
+C1021 inverter1_1/w_n19_78# Gnd 1.03fF
+C1022 inverter1_0/a_n11_52# Gnd 0.15fF
+C1023 inverter1_0/a_n3_52# Gnd 0.13fF
+C1024 inverter1_0/a_n11_84# Gnd 0.04fF
+C1025 inverter1_0/a_n9_65# Gnd 0.22fF
+C1026 inverter1_0/w_n19_78# Gnd 1.03fF
+C1027 2NAND1_0/a_3_n40# Gnd 0.01fF
+C1028 gnd Gnd 6.63fF
+C1029 2NAND1_0/out Gnd 0.28fF
+C1030 a0 Gnd 6.02fF
+C1031 2NAND1_0/w_n10_n2# Gnd 1.09fF

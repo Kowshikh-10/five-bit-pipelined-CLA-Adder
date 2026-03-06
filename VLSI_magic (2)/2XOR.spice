@@ -1,0 +1,81 @@
+* SPICE3 file created from 2XOR.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 inverter1_0/out a gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=171 ps=95
+M1001 inverter1_0/out a Vdd inverter1_0/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=288 ps=128
+M1002 inverter1_1/out b gnd Gnd nfet w=10 l=2
++  ad=70 pd=34 as=0 ps=0
+M1003 inverter1_1/out b Vdd inverter1_1/w_n19_78# pfet w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1004 out inverter1_0/out a_79_14# w_118_6# pfet w=20 l=2
++  ad=120 pd=52 as=320 ps=152
+M1005 a_79_14# a Vdd w_66_6# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_79_n18# a gnd Gnd nfet w=10 l=2
++  ad=60 pd=32 as=0 ps=0
+M1007 a_131_n18# inverter1_0/out out Gnd nfet w=10 l=2
++  ad=60 pd=32 as=100 ps=60
+M1008 a_79_14# inverter1_1/out out w_118_6# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 Vdd b a_79_14# w_66_6# pfet w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 out b a_79_n18# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 gnd inverter1_1/out a_131_n18# Gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 w_66_6# inverter1_0/out 0.07fF
+C1 b inverter1_0/out 0.00fF
+C2 out a_79_n18# 0.10fF
+C3 Vdd inverter1_0/out 0.21fF
+C4 inverter1_0/w_n19_78# inverter1_0/out 0.05fF
+C5 a w_66_6# 0.10fF
+C6 out inverter1_1/out 0.13fF
+C7 w_118_6# a_79_14# 0.14fF
+C8 a b 0.28fF
+C9 a_79_14# inverter1_0/out 0.51fF
+C10 a Vdd 0.41fF
+C11 a inverter1_0/w_n19_78# 0.07fF
+C12 a_79_n18# gnd 0.10fF
+C13 inverter1_1/out gnd 0.18fF
+C14 w_118_6# inverter1_0/out 0.10fF
+C15 out a_79_14# 0.72fF
+C16 b gnd 0.05fF
+C17 out a_131_n18# 0.14fF
+C18 w_118_6# out 0.03fF
+C19 a inverter1_0/out 0.12fF
+C20 out inverter1_0/out 0.08fF
+C21 inverter1_1/out inverter1_1/w_n19_78# 0.05fF
+C22 a_131_n18# gnd 0.10fF
+C23 inverter1_1/w_n19_78# b 0.06fF
+C24 inverter1_1/w_n19_78# Vdd 0.11fF
+C25 gnd inverter1_0/out 0.37fF
+C26 a gnd 0.05fF
+C27 out gnd 0.04fF
+C28 inverter1_1/out b 0.04fF
+C29 inverter1_1/out Vdd 0.21fF
+C30 w_66_6# b 0.10fF
+C31 w_66_6# Vdd 0.12fF
+C32 b Vdd 0.10fF
+C33 inverter1_1/out a_79_14# 0.12fF
+C34 inverter1_0/w_n19_78# Vdd 0.12fF
+C35 w_66_6# a_79_14# 0.05fF
+C36 b a_79_14# 0.08fF
+C37 w_118_6# inverter1_1/out 0.10fF
+C38 Vdd a_79_14# 0.49fF
+C39 inverter1_1/out inverter1_0/out 0.17fF
+C40 Vdd Gnd 0.44fF
+C41 a_131_n18# Gnd 0.01fF
+C42 a_79_n18# Gnd 0.01fF
+C43 out Gnd 0.16fF
+C44 w_118_6# Gnd 1.16fF
+C45 w_66_6# Gnd 0.35fF
+C46 gnd Gnd 1.30fF
+C47 inverter1_1/out Gnd 1.16fF
+C48 b Gnd 0.33fF
+C49 inverter1_1/w_n19_78# Gnd 1.03fF
+C50 inverter1_0/out Gnd 1.97fF
+C51 a Gnd 0.65fF
+C52 inverter1_0/w_n19_78# Gnd 1.03fF
